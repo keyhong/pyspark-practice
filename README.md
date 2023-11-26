@@ -15,7 +15,10 @@ docker-compose down
 
 ## Jupyter Lab
 주피터 랩은 localhost:8888 으로 접속이 가능하다.
+스파크 job을 제출 후 보는 스파크의 애플리케이션 UI는 localhost:4040 으로 접속 가능하다.
 
 ## Spark Standalone
 스파크 Standalone(독립실행형 모드)로 사용 가능하다.</br>
-하지만, 연습에서는 local[*] 모드로 SparkContext(또는 SparkSession)을 만들어 연습해도 무방하기 때문에 로컬 모드로 사용하였다.
+마스터 노드의 UI는 localhost:8080, 워커 1 노드의 UI는 localhost:8081, 워커 2 노드의 UI는 localhost:8082 로 접속 가능하다.</br>
+
+하지만, 연습에서는 환경에서는 local[*] 모드로 SparkContext(또는 SparkSession)을 사용해도 무방하기 때문에 로컬 모드로 사용하였다.
